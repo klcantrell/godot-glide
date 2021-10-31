@@ -27,16 +27,18 @@ animations = [ {
 } ]
 
 [sub_resource type="CapsuleShape2D" id=2]
-radius = 48.8319
-height = 35.8702
+radius = 39.7029
+height = 20.6732
 
 [node name="Mob" type="RigidBody2D" groups=[
 "mobs",
 ]]
+collision_mask = 0
 gravity_scale = 0.0
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.7, 0.7 )
 frames = SubResource( 1 )
 animation = "walk"
 
